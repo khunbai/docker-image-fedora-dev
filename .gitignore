@@ -1,0 +1,14 @@
+# Workspace
+workspace/*
+
+# Keep folders and files that are needed for the project
+!*.gitkeep
+
+# Visual Studio Code
+**/.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
