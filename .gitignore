@@ -1,6 +1,11 @@
 # Workspace
 workspace/*
 
+# Copilot Credentials
+**/config/github-copilot/
+config/github-copilot
+config/github-copilot/*
+
 # Keep folders and files that are needed for the project
 !*.gitkeep
 

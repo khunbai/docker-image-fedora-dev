@@ -14,6 +14,13 @@ RUN dnf update -y && \
                    ranger && \
     dnf clean all
 
+# Explicitly set the shell to bash, otherwise pnpm will not work and need to
+# be installed with `SHELL=$SHELL pnpm setup` inside the container.
+SHELL ["/bin/bash", "-c"]
+RUN npm install --global pnpm \
+    && SHELL=bash pnpm setup \
+    && source /root/.bashrc
+
 # Set a root password
 RUN echo 'root:password' | chpasswd
 
