@@ -7,13 +7,13 @@ Pre-install with Python 3.12.5, Node 20.12.2, pnpm, git, LazyVim, Ranger
 Run basic bash inside container.
 
 ```shell
-docker run -it --rm -v ./workspace:/workspace -v ./config:/root/.config fedora-dev:40 /bin/bash
+docker run -it --rm -p 4200:4200 -v ./pnpm:/root/.local/share/pnpm -v ./workspace:/workspace -v ./config:/root/.config fedora-dev:40 /bin/bash
 ```
 
 Run with exposed ssh port.
 
 ```shell
-docker run -d -p 2222:22 -p 4200:4200 -v ./workspace:/workspace -v ./config:/root/.config --name fedora-dev fedora-dev:40 &&
+docker run -d -p 2222:22 -p 4200:4200 -v ./pnpm:/root/.local/share/pnpm -v ./workspace:/workspace -v ./config:/root/.config --name fedora-dev fedora-dev:40 &&
 # Enter inside the container
 docker exec -it fedora-dev /bin/bash
 ```
@@ -49,4 +49,3 @@ To fix this you have to bind host to 0.0.0.0 by modify the start script in `pack
   ...
 }
 ```
-

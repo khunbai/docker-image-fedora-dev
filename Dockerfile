@@ -16,10 +16,13 @@ RUN dnf update -y && \
 
 # Explicitly set the shell to bash, otherwise pnpm will not work and need to
 # be installed with `SHELL=$SHELL pnpm setup` inside the container.
+ENV PNPM_HOME="/root/.local/share/pnpm"
+ENV PATH="$PNPM_HOME:$PATH"
 SHELL ["/bin/bash", "-c"]
 RUN npm install --global pnpm \
     && SHELL=bash pnpm setup \
     && source /root/.bashrc
+RUN pnpm config set store-dir $PNPM_HOME
 
 # Set a root password
 RUN echo 'root:password' | chpasswd

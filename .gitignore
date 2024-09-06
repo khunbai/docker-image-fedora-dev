@@ -1,6 +1,9 @@
 # Workspace
 workspace/*
 
+# pnpm packages store
+pnpm/*
+
 # Copilot Credentials
 **/config/github-copilot/
 config/github-copilot
