@@ -1,6 +1,9 @@
 # Workspace
 workspace/*
 
+# ssh keys
+ssh/*
+
 # pnpm packages store
 pnpm/*
 
