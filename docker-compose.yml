@@ -10,4 +10,5 @@ services:
       - ./pnpm:/root/.local/share/pnpm
       - ./workspace:/workspace
       - ./config:/root/.config
+      - ./gitconfig:/root/.gitconfig
     restart: always

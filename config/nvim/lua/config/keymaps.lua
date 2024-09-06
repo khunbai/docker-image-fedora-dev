@@ -3,3 +3,6 @@
 -- Add any additional keymaps here
 
 local map = LazyVim.safe_keymap_set;
+
+map('n', 'U', '<C-r>', { desc = "Redo" });
+map('x', "p", '"_dP', { desc = "Paste without yanking" });

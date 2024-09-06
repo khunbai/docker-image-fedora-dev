@@ -2,6 +2,7 @@ return {
   "nvim-neo-tree/neo-tree.nvim",
   opts = {
     enable_git_status = true,
+    close_if_last_window = false, -- Close Neo-tree if it is the last window left in the tab
     sources = { "filesystem", "buffers", "git_status" },
     filesystem = {
       filtered_items = {
