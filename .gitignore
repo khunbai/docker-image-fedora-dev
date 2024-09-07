@@ -4,6 +4,10 @@ workspace/*
 # ssh keys
 ssh/*
 
+# Tmux
+config/tmux/plugins/*
+tmux-*.log
+
 # pnpm packages store
 pnpm/*
 

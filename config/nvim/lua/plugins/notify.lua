@@ -2,7 +2,7 @@ return {
   "rcarriga/nvim-notify",
   opts = {
     stages = "slide",
-    timeout = 2000,
+    timeout = 5000,
     fps = 30,
     top_down = false,
     max_height = function()
@@ -13,3 +13,4 @@ return {
     end,
   },
 }
+
