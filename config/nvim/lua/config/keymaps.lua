@@ -12,3 +12,5 @@ map('n', 'gl', '$', { desc = "Go to end of line" });
 map('v', 'gl', '$', { desc = "Go to end of line" });
 map('i', '<A-i>', '<Esc>', { desc = "Exit insert mode" });
 map('v', '<A-i>', '<Esc>', { desc = "Exit visual mode" });
+map('n', 'x', 'xi', { desc = "Delete a character and go to insert mode" });
+map('v', 'x', 'xi', { desc = "Delete a character and go to insert mode" });

@@ -1,14 +1,14 @@
 services:
   fedora-dev:
-    image: fedora-dev:40
+    image: theerapats28/fedora-dev:40
     container_name: fedora-dev
     ports:
       - "2222:22"
       - "4200:4200"
     volumes:
-      - ./ssh:/root/.ssh
-      - ./pnpm:/root/.local/share/pnpm
-      - ./workspace:/workspace
-      - ./config:/root/.config
-      - ./gitconfig:/root/.gitconfig
+      - ./ssh:/home/khunbai/.ssh:rw
+      - ./pnpm:/home/khunbai/.local/share/pnpm:rw
+      - ./workspace:/home/khunbai/workspace:rw
+      - ./config:/home/khunbai/.config:rw
+      - ./gitconfig:/home/khunbai/.gitconfig:rw
     restart: always
