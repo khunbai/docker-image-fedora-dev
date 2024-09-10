@@ -11,6 +11,8 @@ RUN dnf update -y && \
                    gcc \
                    curl \
                    zsh \
+                   xclip \
+                   xsel \
                    bc \
                    tmux \
                    neovim \
