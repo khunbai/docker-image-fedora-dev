@@ -17,8 +17,8 @@ RUN dnf update -y && \
                    tmux \
                    neovim \
                    ripgrep \
-                   fd-find \
-                   ranger && \
+                   ranger \
+                   fd-find && \
     dnf clean all
 
 # Create the 'khunbai' user and set as a sudoer without password required.
