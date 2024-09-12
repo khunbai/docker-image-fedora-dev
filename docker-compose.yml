@@ -1,6 +1,6 @@
 services:
   fedora-dev:
-    image: theerapats28/fedora-dev:40
+    image: theerapats28/fedora-dev:40.01
     container_name: fedora-dev
     ports:
       - "2222:22"
