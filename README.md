@@ -78,3 +78,26 @@ To fix this you have to bind host to 0.0.0.0 by modify the start script in `pack
 ## Example of project directory structure
 
 ![alt text](https://github.com/khunbai/docker-image-fedora-dev/blob/main/readme_assets/ex_folder_str.png?raw=true)
+
+## Basic keymaps
+
+### LazyVim
+
+#### Normal Mode
+
+- `za` Toggle fold
+- `<leader>uh` Toggle inlay hints
+- `<leader>sr` Search and replace
+- `<leader>cd` Open warning/error dianostic panel
+- `<leader>cf` Format current file
+
+#### Neotree
+
+- `<S-h>` Toggle hidden files/folders
+
+### TMUX
+
+- `<C-a>` Prefix
+- `<prefix>1` Switch to window 1, number could be 0-9
+- `<prefix>-` Horizontal split pane
+- `<prefix>c` Create new window

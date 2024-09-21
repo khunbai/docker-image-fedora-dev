@@ -5,6 +5,7 @@ services:
     ports:
       - "2222:22"
       - "4200:4200"
+      - "3000:3000" # ExpressJS
     volumes:
       - ./workspace/1-devs:/home/khunbai/workspace:rw
       - ./ssh:/home/khunbai/.ssh:rw
@@ -15,3 +16,9 @@ services:
     environment:
       - DISPLAY=${DISPLAY} # For clipboard sync in nvim.
     restart: always
+    networks:
+      - dev-network
+
+networks:
+  dev-network:
+    external: true

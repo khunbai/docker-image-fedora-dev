@@ -4,34 +4,35 @@ FROM fedora:40
 # Install OpenSSH server and other packages
 #   - bc: Basic calculator, required by passion theme in oh-my-zsh.
 RUN dnf update -y && \
-    dnf install -y openssh-server \
-                   python3 \
-                   python3-libs \
-                   git \
-                   gcc \
-                   curl \
-                   zsh \
-                   xclip \
-                   xsel \
-                   bc \
-                   tmux \
-                   neovim \
-                   ripgrep \
-                   ranger \
-                   fd-find && \
-    dnf clean all
+  dnf install -y openssh-server \
+  python3 \
+  python3-libs \
+  git \
+  gcc \
+  curl \
+  zsh \
+  xclip \
+  xsel \
+  bc \
+  tmux \
+  neovim \
+  ripgrep \
+  ranger \
+  net-tools \
+  fd-find && \
+  dnf clean all
 
 # Create the 'khunbai' user and set as a sudoer without password required.
 RUN useradd -ms /bin/bash khunbai && \
-    echo 'khunbai ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
-    
+  echo 'khunbai ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
+
 # Explicitly set the shell to bash, otherwise pnpm will not work and need to
 # be installed with `SHELL=$SHELL pnpm setup` inside the container.
 ENV PNPM_HOME="/home/khunbai/.local/share/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
 RUN npm install --global pnpm \
-    && SHELL=bash pnpm setup \
-    && source /home/khunbai/.bashrc
+  && SHELL=bash pnpm setup \
+  && source /home/khunbai/.bashrc
 
 # Set a root password (you may want to reconsider security settings for production)
 RUN echo 'root:password' | chpasswd

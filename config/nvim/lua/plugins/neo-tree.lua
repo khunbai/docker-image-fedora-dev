@@ -17,15 +17,20 @@ return {
       },
     },
     window = {
-      position = "bottom", -- "float" | "left" | "right" | "split" | "bottom"
-      width = "30%",  -- applicable when position is left or right
-      height = "20%", -- applicable when position is top or bottom
+      -- position = "bottom", -- "float" | "left" | "right" | "split" | "bottom"
+      -- width = "30%",  -- applicable when position is left or right
+      -- height = "20%", -- applicable when position is top or bottom
+      position = "float",
       popup = { -- only applicable when position is "float"
         size = {
           width = "30%",
           height = "80%",
         },
-        position = "5%", -- position of the floating window from the top.
+        -- position = "5%", -- position of the floating window from the top.
+        position = {
+          row = "5",
+          col = "95%",
+        },
       },
     },
     default_component_configs = {
@@ -38,14 +43,14 @@ return {
       git_status = {
         symbols = {
           -- Change type
-          added     = "✚",
-          modified  = "M",
-          deleted   = "",
+          added    = "✚",
+          modified = "M",
+          deleted  = "",
           -- Status type
           unstaged = "󰄱",
-          staged = "󰱒",
-          ignored   = "",
-          conflict  = "",
+          staged   = "󰱒",
+          ignored  = "",
+          conflict = "",
         },
       },
     },
