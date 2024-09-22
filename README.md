@@ -90,6 +90,7 @@ To fix this you have to bind host to 0.0.0.0 by modify the start script in `pack
 - `<leader>sr` Search and replace
 - `<leader>cd` Open warning/error dianostic panel
 - `<leader>cf` Format current file
+- `<leader>xt` Open todo-comments.nvim window
 
 #### Neotree
 
@@ -98,6 +99,7 @@ To fix this you have to bind host to 0.0.0.0 by modify the start script in `pack
 ### TMUX
 
 - `<C-a>` Prefix
+- `<prefix>j` Move to below pane (k for move to above)
 - `<prefix>1` Switch to window 1, number could be 0-9
 - `<prefix>-` Horizontal split pane
 - `<prefix>c` Create new window
