@@ -92,6 +92,18 @@ To fix this you have to bind host to 0.0.0.0 by modify the start script in `pack
 - `<leader>cf` Format current file
 - `<leader>xt` Open todo-comments.nvim window
 
+---
+
+Multicursor
+
+- `<C-o>` add a cursor
+- `<C-u>` exit multi-cursor mode to normal
+- `<C-i>` Go to first cursor and enable multi-cursor mode
+- `<C-q>` Clear all cursors
+- `<C-n>` Go to next word and add cursor
+- `<C-m>` Remove current cursor and go to next word and add cursor
+- `<leader-x>` Remove nearest cursor
+
 #### Neotree
 
 - `<S-h>` Toggle hidden files/folders
