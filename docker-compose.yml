@@ -15,6 +15,7 @@ services:
       - /tmp/.X11-unix:/tmp/.X11-unix:rw # Mount the X11 socket, for clipboard sync in nvim.
     environment:
       - DISPLAY=${DISPLAY} # For clipboard sync in nvim.
+      - TZ=Asia/Bangkok
     restart: always
     networks:
       - dev-network

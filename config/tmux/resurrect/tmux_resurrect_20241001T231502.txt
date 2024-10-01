@@ -1,0 +1,5 @@
+pane	0	0	1	:*	0	0fa24879aa64	:/home/khunbai/workspace/00-docker-image-fedora-dev	1	zsh	:
+pane	1	0	1	:*	0	0fa24879aa64	:/home/khunbai	1	zsh	:
+window	0	0	:zsh	1	:*	d77d,129x88,0,0,0	:
+window	1	0	:zsh	1	:*	d77e,129x88,0,0,1	:
+state	0	1
