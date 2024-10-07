@@ -6,13 +6,10 @@ return {
     sources = { "filesystem", "buffers", "git_status" },
     filesystem = {
       filtered_items = {
+        visible = true, -- Show all hidden files in dimmed color
         hide_dotfiles = false,
         hide_by_name = {
           --"node_modules"
-        },
-        always_show = { -- remains visible even if other settings would normally hide it
-          --".gitignored",
-          "node_modules",
         },
       },
     },

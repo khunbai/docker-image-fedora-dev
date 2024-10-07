@@ -115,6 +115,7 @@ Multicursor
 - `<prefix>1` Switch to window 1, number could be 0-9
 - `<prefix>-` Horizontal split pane
 - `<prefix>c` Create new window
+- `<prefix>,` Rename window
 - `<prefix><S-i>` Install plugin (TPM)
 - `<prefix><C-s>` Save session (TMUX SESSION)
 - `<prefix><C-r>` Restore session (TMUX SESSION)
