@@ -7,11 +7,14 @@ services:
       - "4200:4200"
       - "3000:3000" # ExpressJS
     volumes:
-      - ./workspace/1-devs:/home/khunbai/workspace:rw
-      - ./ssh:/home/khunbai/.ssh:rw
-      - ./pnpm:/home/khunbai/.local/share/pnpm:rw
-      - ./config:/home/khunbai/.config:rw
-      - ./gitconfig:/home/khunbai/.gitconfig:rw
+      - ./workspace/1-devs/:/home/khunbai/workspace/:rw
+      - ./ssh/:/home/khunbai/.ssh/:rw
+      - ./pnpm/:/home/khunbai/.local/share/pnpm/:rw
+      - ./config/nvim/:/home/khunbai/.config/nvim/:rw
+      - ./config/github-copilot/:/home/khunbai/.config/github-copilot/:rw
+      - ./config/ranger/:/home/khunbai/.config/ranger/:rw
+      - ./config/tmux/:/home/khunbai/.config/tmux/:rw
+      - ./config/git/gitconfig:/home/khunbai/.gitconfig:rw
       - /tmp/.X11-unix:/tmp/.X11-unix:rw # Mount the X11 socket, for clipboard sync in nvim.
     environment:
       - DISPLAY=${DISPLAY} # For clipboard sync in nvim.
