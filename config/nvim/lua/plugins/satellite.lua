@@ -4,6 +4,9 @@ vim.api.nvim_set_hl(0, "SatelliteBackground", { link = "None" })
 
 return {
   "lewis6991/satellite.nvim",
+  -- NOTE: This plugin is not compatible with "jake-stewart/multicursor.nvim"
+  --       as it causes nvim unresponsive if cursors are actived and switch out
+  --       to other apps. Disable it if you think it's not worth it.
   enabled = true,
   opts = {
     current_only = false,
