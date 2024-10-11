@@ -1,8 +1,0 @@
-pane	0	0	0	:	0	0fa24879aa64	:/home/khunbai/workspace/00-docker-image-fedora-dev	1	zsh	:
-pane	0	1	0	:-	0	0fa24879aa64	:/home/khunbai/workspace/05-express-solar-form	1	zsh	:
-pane	0	2	1	:*	0	0fa24879aa64	:/home/khunbai/workspace/04-ng-form-solar-roof-form	0	zsh	:
-pane	0	2	1	:*	1	0fa24879aa64	:/home/khunbai/workspace/04-ng-form-solar-roof-form	1	zsh	:
-window	0	0	:00-dev	0	:	b97e,129x90,0,0,1	off
-window	0	1	:express-solar	0	:-	b97f,129x90,0,0,2	off
-window	0	2	:ng-solar	1	:*	32d7,129x90,0,0[129x76,0,0,3,129x13,0,77,4]	off
-state	0	

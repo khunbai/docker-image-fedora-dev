@@ -6,6 +6,7 @@ ssh/*
 
 # Tmux
 config/tmux/plugins/*
+config/tmux/resurrect/*
 tmux-*.log
 
 # pnpm packages store

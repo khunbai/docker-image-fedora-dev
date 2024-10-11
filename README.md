@@ -119,3 +119,19 @@ Multicursor
 - `<prefix><S-i>` Install plugin (TPM)
 - `<prefix><C-s>` Save session (TMUX SESSION)
 - `<prefix><C-r>` Restore session (TMUX SESSION)
+- `<prefix>[` Enter copy mode
+- `<prefix>]` Paste tmux clipboard copied from tmux copy mode
+
+**Tmux copy mode keymap**
++-------------------+--------------------+---------------+
+| Action | emacs | vi |
++-------------------+--------------------+---------------+
+| move character | Up Down Left Right | j k h l |
+| move line | Ctrl-Up Ctrl-Down | Ctrl+Y Ctrl+E |
+| move whole screen | PageUp PageDown | Ctrl+B Ctrl+F |
+| search | Ctrl+S | / |
+| start selection | Ctrl+Space | Space |
+| copy selection | Ctrl+W | Enter |
+| clear selection | Ctrl+G | Escape |
+| exit copy mode | Escape | q |
++-------------------+--------------------+---------------+
