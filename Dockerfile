@@ -55,11 +55,12 @@ RUN pnpm config set store-dir $PNPM_HOME
 # Expose SSH port for vscode
 EXPOSE 22
 
-# Set Zsh as the default shell
-SHELL ["/bin/zsh", "-c"]
-
 # Install Oh My Zsh
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh) --unattended"
+
+# Set Zsh as the default shell
+SHELL ["/usr/bin/zsh", "-c"]
+RUN echo 'export SHELL=/usr/bin/zsh' >> ~/.zshrc
 
 # Start SSH service, this is a long running process to keep the container active.
 CMD ["sudo", "/usr/sbin/sshd", "-D"]
