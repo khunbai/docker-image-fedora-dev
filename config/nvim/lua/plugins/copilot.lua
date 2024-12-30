@@ -7,7 +7,8 @@ return {
       hide_during_completion = true,
       debounce = 75,
       keymap = {
-        accept = "<C-l>",
+        -- accept = "<C-l>",
+        accept = "<Right>",
         accept_word = false,
         accept_line = false,
         dismiss = "<C-h>",
