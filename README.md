@@ -91,6 +91,7 @@ To fix this you have to bind host to 0.0.0.0 by modify the start script in `pack
 - `<leader>cd` Open warning/error dianostic panel
 - `<leader>cf` Format current file
 - `<leader>xt` Open todo-comments.nvim window
+- `<leader>bd` Close current tab/buffer
 
 ---
 
@@ -123,13 +124,14 @@ Multicursor
 - `<prefix>]` Paste tmux clipboard copied from tmux copy mode
 
 **Tmux copy mode keymap**
-| Action             | emacs              | vi            |
+
+| Action | emacs | vi |
 |--------------------|--------------------|---------------|
-| move character     | Up Down Left Right | j k h l       |
-| move line          | Ctrl-Up Ctrl-Down  | Ctrl+Y Ctrl+E |
-| move whole screen  | PageUp PageDown    | Ctrl+B Ctrl+F |
-| search             | Ctrl+S             | /             |
-| start selection    | Ctrl+Space         | Space         |
-| copy selection     | Ctrl+W             | Enter         |
-| clear selection    | Ctrl+G             | Escape        |
-| exit copy mode     | Escape             | q             |
+| move character | Up Down Left Right | j k h l |
+| move line | Ctrl-Up Ctrl-Down | Ctrl+Y Ctrl+E |
+| move whole screen | PageUp PageDown | Ctrl+B Ctrl+F |
+| search | Ctrl+S | / |
+| start selection | Ctrl+Space | Space |
+| copy selection | Ctrl+W | Enter |
+| clear selection | Ctrl+G | Escape |
+| exit copy mode | Escape | q |
