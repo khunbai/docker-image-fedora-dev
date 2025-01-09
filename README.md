@@ -111,6 +111,13 @@ Multicursor
 
 ### TMUX
 
+Tmux plugins, please first install plugin manager TPM with this command.
+`git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm`
+And set the tmux config file location with this command.
+`tmux source-file ~/.config/tmux/tmux.conf`
+To install plugins configured in the tmux.conf file, start a tmux session and
+press prefix + Shift + I to initiate the installation.
+
 - `<C-a>` Prefix
 - `<prefix>j` Move to below pane (k for move to above)
 - `<prefix>1` Switch to window 1, number could be 0-9
@@ -122,16 +129,18 @@ Multicursor
 - `<prefix><C-r>` Restore session (TMUX SESSION)
 - `<prefix>[` Enter copy mode
 - `<prefix>]` Paste tmux clipboard copied from tmux copy mode
+- You can also use mouse with right click on the windows below to modify them.
 
 **Tmux copy mode keymap**
 
-| Action | emacs | vi |
-|--------------------|--------------------|---------------|
-| move character | Up Down Left Right | j k h l |
-| move line | Ctrl-Up Ctrl-Down | Ctrl+Y Ctrl+E |
-| move whole screen | PageUp PageDown | Ctrl+B Ctrl+F |
-| search | Ctrl+S | / |
-| start selection | Ctrl+Space | Space |
-| copy selection | Ctrl+W | Enter |
-| clear selection | Ctrl+G | Escape |
-| exit copy mode | Escape | q |
+| Action            | emacs              | vi            |
+| ----------------- | ------------------ | ------------- |
+| move character    | Up Down Left Right | j k h l       |
+| move line         | Ctrl-Up Ctrl-Down  | Ctrl+Y Ctrl+E |
+| move whole screen | PageUp PageDown    | Ctrl+B Ctrl+F |
+| search            | Ctrl+S             | /             |
+| start selection   | Ctrl+Space         | Space         |
+| copy selection    | Ctrl+W             | Enter         |
+| clear selection   | Ctrl+G             | Escape        |
+
+#### End

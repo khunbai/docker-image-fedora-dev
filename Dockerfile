@@ -62,6 +62,9 @@ RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master
 SHELL ["/usr/bin/zsh", "-c"]
 RUN echo 'export SHELL=/usr/bin/zsh' >> ~/.zshrc
 
+# Set NODE_ENV to development for express server
+RUN echo 'export NODE_ENV=development' >> ~/.zshrc
+
 # Start SSH service, this is a long running process to keep the container active.
 CMD ["sudo", "/usr/sbin/sshd", "-D"]
 
