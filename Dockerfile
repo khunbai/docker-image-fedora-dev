@@ -13,6 +13,7 @@ RUN dnf update -y && \
   zsh \
   xclip \
   xsel \
+  wl-clipboard \
   bc \
   tmux \
   neovim \
