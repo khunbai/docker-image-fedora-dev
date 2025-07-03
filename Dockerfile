@@ -3,6 +3,8 @@ FROM fedora:40
 
 # Install OpenSSH server and other packages
 #   - bc: Basic calculator, required by passion theme in oh-my-zsh.
+#   - fzf: required for new neovim file search system
+#   - bind-utils: required for dig command for website_checking.bash
 RUN dnf update -y && \
   dnf install -y openssh-server \
   python3 \
@@ -18,6 +20,8 @@ RUN dnf update -y && \
   tmux \
   neovim \
   ripgrep \
+  fzf \
+  bind-utils \
   ranger \
   net-tools \
   fd-find && \
@@ -95,5 +99,5 @@ CMD ["sudo", "/usr/sbin/sshd", "-D"]
 # docker exec -it fedora-dev /bin/bash
 # 3. Commit the changes to a new image
 # docker commit fedora-dev fedora-dev:40
-# 4. ou can also add tags and descriptions to your new image to better identify it:
+# 4. You can also add tags and descriptions to your new image to better identify it:
 # docker commit -m "Preserv installed nvim plugin state" -a "Your Name" fedora-dev fedora-dev:40
